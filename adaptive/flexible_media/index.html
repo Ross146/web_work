@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Гибкая сетка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/matchmedia.js"></script>
+    <script src="js/picturefill.js"></script>
+</head>
+<body>    
+    <div class="container">
+       
+        <div class="cols col-4">Привет</div>
+        <div class="cols col-8">
+            /*picturefill polyfill*/
+            <picture>
+	            <source srcset="img/ghost-small.jpeg" media="(max-width: 500px)">
+                <source srcset="img/ghost-xl.jpeg" media="(min-width: 500px)">
+	             <img srcset="img/ghost-xl.jpeg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+            </picture>
+        </div>
+    </div>
+    <div class="container">
+       
+        <div class="cols col-3">Четыре</div>
+        <div class="cols col-7">Четыре</div>
+        <div class="cols col-2">Четыре</div>
+        
+    </div>
+</body>
+</html>

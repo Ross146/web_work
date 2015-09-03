@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Barbershop Borodinski</title>
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" type="text/css">        
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>        
+        <meta charset="utf-8"
+    </head>
+        <body>
+            <div class="header">
+                <div class="layout-center-wrapper">
+                    <ul class="top-menu">
+                        <li><a class="active" href="/index.html">Главная</a></li>
+                        <li><a href="/info.html">Информация</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="/price.html">Прайс-лист</a></li>
+                        <li><a href="/shop.html">Магазин</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="account-menu">
+                        <a class="account-menu-enter account-menu-enter-disabled" href="#">Вход</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="login-popup">
+                <h2>Личный кабинет</h2>
+                <p>Введите пожалуйста свой логин и пароль</p>
+                <form class="login-form" action="/auth" metod="post">
+                    <input type="text" name="login" placeholder="Логин">
+                    <input type="password" name="password" placeholder="Пароль">                     <label><input type="checkbox" name="checkbox">Запомните меня</label>
+                    <a class="restore" href="/restore">Я забыл пароль</a>
+                    <input class="submit" type="submit" value="Войти">
+                </form>
+                <div class="btn-close"></div>
+            </div>
+            <div class="layout-center-wrapper">
+                <div class="logo"><a href="img/logo.png"><img src="img/logo.png"></a></div>
+                <ul class="features">
+                    <li>
+                        <div class="feature-title">Быстро</div>
+                        <p>Мы сделаем работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+                    </li>
+                    <li>
+                        <div class="feature-title">Круто</div>
+                        <p>Забудте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+                    </li>
+                    <li>
+                        <div class="feature-title">Дорого</div>
+                        <p>Наши мастера - професионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт особый статус?</p>
+                    </li>
+                </ul>
+                <div class="index-section">
+                    <div class="index-left-column">
+                        <div class="index-title">Новости</div>
+                        <div class="index-news">
+                            <a href="#">Мы наконецто завезли Ягермейстер! Теперь вы можете пропустить стаканчик во время стрижки</a>
+                            <span class="date">25 сентября</span>
+                            <a href="#">В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</a>
+                            <span class="date">19 сентября</span>
+                        </div>
+                        <a href="#" class="btn">Все новости</a>
+                    </div>
+                    <div class="index-right-column">
+                        <div class="index-title">Фотогалерея</div>
+                        <div class="index-right-column-foto">
+                            <a href="img/foto1.jpg">
+                            <img src="img/foto1.jpg">
+                            </a>
+                        </div>
+                        <a href="#" class="btn">Назад</a>
+                        <a href="#" class="btn">Вперёд</a>
+                    </div>
+                </div>
+                <div class="index-section">
+                    <div class="index-left-column">
+                        <div class="index-title index-title-contact">Контактная информация</div>
+                        <div class="index-adress">Barbershop "Borodinski"<br> Адрес:г.Москва, ул.Собаки Павлова,д.13<br> телефон:+7(495)666-02-666</div>
+                        <div class="index-timework">Время работы:<br> Пн-Пт: с 10:00 до 22:00<br> Сб-Вс: с 10:00 до 19:00</div>
+                        <a href="#" class="btn">Как проехать</a>
+                        <a href="#" class="btn">Обратная связь</a>
+                    </div>
+                    <div class="index-right-column">
+                        <div class="index-title">Записаться</div>
+                        <div class="index-write">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</div>
+                        <form action="/echo" method="post">
+                            <input type="text" name="data" id="data-field" value="дата">
+                            <input type="text" name="time" id="time-field" value="время">
+                            <input type="text" name="name" id="name-field" value="ваше имя">
+                            <input type="tel" name="data" id="tel-field" value="телефон">
+                            <input type="submit" name="submit" id="submit-field" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="layout-center-wrapper">
+                    <div class="contacts-address">Barbershop "Borodinski"<br> Адрес:г.Москва, ул.Собаки Павлова,д.13<br> телефон:+7(495)666-02-666
+                    </div>
+                    <div class="social-buttons">
+                        <p>Давайте дружить!</p>
+                        <a href="http://vk.com" class="btn-social btn-social-vk"></a>
+                        <a href="http://facebook.com" class="btn-social btn-social-fb"></a>
+                        <a href="http://instagram.com" class="btn-social btn-social-inst"></a>
+                    </div>
+                    <div class="copyright">Дизайн сайта:
+                        <a href="http://glukhanko.ru" class="btn">GLUKHANKO.RU</a>
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>

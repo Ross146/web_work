@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 100%;
+    font-family: sans-serif;    
+}
+article,aside,figure,figcaption,hgroup,footer,header,nav,section,video,object{display:block}
+
+.header{
+    background: url(../img/bckg.jpg) repeat 0 0;
+    height: 200px;
+}
+.nav-bar{
+    border-bottom: 5px solid white;
+    -webkit-box-shadow: 0 0 0 black;
+    box-shadow: 0 0 10px black;
+    background: #0093D7;
+}
+.container {    
+    width: 1140px;
+    margin: 0 auto;    
+}
+.container .cols{
+    float:left;
+    background: #0093D7; 
+    position: relative;    
+}
+.header .cols a{    
+    margin: 0;
+    padding: 30px 7px;
+    text-align: center;    
+    border-right: 5px solid white;    
+    display:block;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+.header .active:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/flag-active.png) no-repeat 0 0;
+}
+.header .cols a:hover{
+     background: #005386;
+     -webkit-transition: background 0.5s ease;
+     -moz-transition: background 0.5s ease;
+     transition: background 0.5s ease;
+}
+.header .container .logo {
+    margin: 0;
+    padding: 30px 7px;
+    text-align: center;    
+    border-right: 5px solid white;    
+    display:block;
+    border-left: 5px solid white;
+    height: 18px;
+    background: url(../img/logo-corp.png) no-repeat center;
+}
+.container .cols.col-1 a{width:75px;}
+.container .cols.col-2 a{width:170px;}
+.container .cols.col-3 a,.container .cols.col-3{width:265px;}
+.container .cols.col-4 a{width:360px;}
+.container .cols.col-5 a{width:455px;}
+.container .cols.col-6 a{width:550px;}
+.container .cols.col-7 a{width:645px;}
+.container .cols.col-8 a{width:740px;}
+.container .cols.col-9 a{width:835px;}
+.container .cols.col-10 a{width:930px;}
+.container .cols.col-11 a{width:1025px;}
+.container .cols.col-12 a{width:1120px;}
+
+.container:before,
+.container:after,
+.row:after,
+.row:before,
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.container:after,
+.row:after,
+.clear:after {
+    clear: both;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1160px) {
+    .container {width:960px;}
+    .container .cols.col-1 a {width:60px;}
+    .container .cols.col-2 a {width:140px;}
+    .container .cols.col-3 a,.container .cols.col-3 {width:220px;}
+    .container .cols.col-4 a {width:300px;}
+    .container .cols.col-5 a {width:380px;}
+    .container .cols.col-6 a {width:460px;}
+    .container .cols.col-7 a {width:540px;}
+    .container .cols.col-8 a {width:620px;}
+    .container .cols.col-9 a {width:700px;}
+    .container .cols.col-10 a {width:780px;}
+    .container .cols.col-11 a {width:860px;}
+    .container .cols.col-12 a {width:940px;}
+}
+    
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container {width:768px;}
+    .container .cols.col-1 a {width:44px;}
+    .container .cols.col-2 a {width:108px;}
+    .container .cols.col-3 a,.container .cols.col-3 {width:172px;}
+    .container .cols.col-4 a {width:236px;}
+    .container .cols.col-5 a {width:300px;}
+    .container .cols.col-6 a {width:364px;}
+    .container .cols.col-7 a {width:428px;}
+    .container .cols.col-8 a {width:492px;}
+    .container .cols.col-9 a {width:556px;}
+    .container .cols.col-10 a {width:620px;}
+    .container .cols.col-11 a {width:684px;}
+    .container .cols.col-12 a {width:748px;}
+}
+
+@media only screen and (max-width: 767px) {
+    .container {width:300px;}
+    .container .cols.col-1 a,
+    .container .cols.col-2 a,
+    .container .cols.col-3 a,
+    .container .cols.col-3,
+    .container .cols.col-4 a,
+    .container .cols.col-5 a,
+    .container .cols.col-6 a,
+    .container .cols.col-7 a,
+    .container .cols.col-8 a,
+    .container .cols.col-9 a,
+    .container .cols.col-10 a,
+    .container .cols.col-11 a,
+    .container .cols.col-12 a {        
+        width:300px;
+    }    
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {width:420px;}
+    .container .cols.col-1 a,
+    .container .cols.col-2 a,
+    .container .cols.col-3 a,
+    .container .cols.col-3,
+    .container .cols.col-4 a,
+    .container .cols.col-5 a,
+    .container .cols.col-6 a,
+    .container .cols.col-7 a,
+    .container .cols.col-8 a,
+    .container .cols.col-9 a,
+    .container .cols.col-10 a,
+    .container .cols.col-11 a,
+    .container .cols.col-12 a{        
+        width:420px;        
+    }    
+}
+@media only screen and (max-width: 767px),
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .container .cols.col-1 a,
+    .container .cols.col-2 a,
+    .container .cols.col-3 a,
+    .container .cols.col-3,
+    .container .cols.col-4 a,
+    .container .cols.col-5 a,
+    .container .cols.col-6 a,
+    .container .cols.col-7 a,
+    .container .cols.col-8 a,
+    .container .cols.col-9 a,
+    .container .cols.col-10 a,
+    .container .cols.col-11 a,
+    .container .cols.col-12 a {
+        padding: 10px 10px;
+        border: none;
+        border-bottom: 2px solid white;
+    }
+    .header .container .logo{
+        height: 58px;
+        position: relative;
+        border: none;        
+    }
+    .header .active:after{
+        right: 0;
+    }
+    .header .container .slide{
+        display: none;
+    }
+    .header .container .btn{
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 50px;
+        height: 40px;
+        background: url(../img/threelines.png);
+        cursor: pointer;
+    }    
+}
